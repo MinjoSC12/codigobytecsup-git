@@ -16,3 +16,11 @@ git config --list
 git config --global user.name "nombre nuevo"
 git config --global user.email "minuevoemail@gmail.com"
 ```
+* Init, add, status y commits
+```
+git init
+git status
+git add .
+git commit -m "Crear commit"
+```
+Hola zorra
