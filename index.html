@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,61 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>TITULAZO</h1>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+    <main>
+        <hr>
+        <form>
+            <p>
+                <label for="nombres">Nombres y Apellidos</label>
+                <input type="text" id="nombres" placeholder="Ej. Alfredo Bustios" required minlength="2" maxlength="20">
+            </p>
+            <p>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" min="17" max="100" required>
+            </p>
+            <p>
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" required>
+            </p>
+            
+            <p>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" required>
+            </p>
+            
+            <p><label>Estado Civil</label>
+                <br/>
+                <input type="radio" id="Casado" name="estado civil" value="Casado">
+                <label for="Casado">Casado/a</label>
+                <br/>
+                <input type="radio" id="Soltero" name="estado civil" value="Soltero">
+                <label for="Soltero">Soltero/a</label>
+                <br/>
+                <input type="radio" id="Divorciado" name="estado civil" value="Divorciado">
+                <label for="Divorciado">Divorciado/a</label>
+                <br/>
+                <input type="radio" id="Viudo" name="estado civil" value="Viudo">
+                <label for="Viudo">Viudo/a</label>
+                <br/>
+            </p>
+            <p>
+                <label>Ciudad</label>
+                <select name="" id="">}
+                    <option selected disabled>Seleccione su ciudad</option>
+                    <option value="Arequipa">Arequipa</option>
+                    <option value="Lima">Lima</option>
+                    <option value="Cusco">Cusco</option>
+                </select>
+            </p>
+            <p><input type="datetime-local" name="hora_fecha"></p>
+            <p><input type="color"></p>
+            <p><input type="file"></p>
+            
+            <p><input type="submit" value="Enviar"></p>
+                
+        </form>
+    </main>
 </body>
 </html>
